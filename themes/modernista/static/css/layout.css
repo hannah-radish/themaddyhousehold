@@ -1,6 +1,11 @@
 .browser-height {
   height: 100%; }
 
+.container {
+  width: 75%;
+  float: right;
+  height: 100%; }
+
 .container-height {
   height: 70%; }
 

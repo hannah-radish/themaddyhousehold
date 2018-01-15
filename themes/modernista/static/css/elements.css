@@ -92,12 +92,12 @@ p, small, a {
   -webkit-font-smoothing: antialiased; }
 
 h1 {
-  font-size: 3em;
-  line-height: 1em; }
+  font-size: 2em;
+  line-height: 1.2em; }
 
 h2 {
-  font-size: 1.8em;
-  line-height: 1em; }
+  font-size: 1.6em;
+  line-height: 1.2em; }
 
 h3 {
   font-size: 1.2em; }
@@ -105,7 +105,7 @@ h3 {
 h4, p, a {
   font-size: 1em; }
 
-small {
+small, .small {
   font-size: 10px; }
 
 strong {
@@ -128,6 +128,11 @@ strong {
   text-align: right; }
 
 .browser-height {
+  height: 100%; }
+
+.container {
+  width: 75%;
+  float: right;
   height: 100%; }
 
 .container-height {
@@ -307,9 +312,9 @@ strong {
   z-index: 1; }
 
 .box-shadow {
-  -webkit-box-shadow: 0px 30px 90px 0px rgba(33, 35, 52, 0.3);
-  -moz-box-shadow: 0px 30px 90px 0px rgba(33, 35, 52, 0.3);
-  box-shadow: 0px 30px 90px 0px rgba(33, 35, 52, 0.3); }
+  -webkit-box-shadow: 0px 45px 90px 0px rgba(33, 35, 52, 0.5);
+  -moz-box-shadow: 0px 45px 90px 0px rgba(33, 35, 52, 0.5);
+  box-shadow: 0px 45px 90px 0px rgba(33, 35, 52, 0.5); }
 
 .tag {
   width: auto;
@@ -317,3 +322,39 @@ strong {
   line-height: 45px;
   padding-left: 16px;
   padding-right: 16px; }
+
+.large-image {
+  width: 35vw;
+  height: 35vw;
+  background-size: cover;
+  border: 8px solid white; }
+
+.medium-image {
+  width: 25vw;
+  height: 25vw;
+  background-size: cover;
+  border: 8px solid white; }
+
+.small-image {
+  width: 15vw;
+  height: 15vw;
+  background-size: cover;
+  border: 8px solid white; }
+
+.small-circle-image {
+  width: 7.5vw;
+  height: 7.5vw;
+  background-size: cover;
+  border: 8px solid white;
+  border-radius: 50%; }
+
+.home-images {
+  bottom: 0;
+  right: 0; }
+
+.home-images-small {
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%); }

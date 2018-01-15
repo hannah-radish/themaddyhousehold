@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="14px" viewBox="0 0 18 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title></title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="mail" transform="translate(-14.000000, -16.000000)" fill="#F3EFCD">
+            <g id="Group-4">
+                <path d="M23,22.18 L29.68,18 L16.32,18 L23,22.18 Z M29.68,28 L29.68,19.68 L23,23.82 L16.32,19.68 L16.32,28 L29.68,28 Z M29.68,16.32 C30.1333356,16.32 30.5199984,16.486665 30.84,16.82 C31.1600016,17.153335 31.32,17.5466644 31.32,18 L31.32,28 C31.32,28.4533356 31.1600016,28.846665 30.84,29.18 C30.5199984,29.513335 30.1333356,29.68 29.68,29.68 L16.32,29.68 C15.8666644,29.68 15.4800016,29.513335 15.16,29.18 C14.8399984,28.846665 14.68,28.4533356 14.68,28 L14.68,18 C14.68,17.5466644 14.8399984,17.153335 15.16,16.82 C15.4800016,16.486665 15.8666644,16.32 16.32,16.32 L29.68,16.32 Z" id=""></path>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -8,29 +8,129 @@
     <style include="shared-styles">
     
     #sidebar {
-      width: 20%;
+      width: 25%;
       height: 100%;
       position: fixed;
+      overflow: scroll;
+      display: flex;
+      align-items: center;
+    }
+    
+    img {
+      width: 60px;
+    }
+    
+    a, p {
+      font-size: 12px;
+    }
+    
+    .social-icon {
+      height: 45px;
+      width: 45px;
+      background-color: #0470FE;
+      border-radius: 50%;
+      line-height: 50px;
+    }
+    
+    .icon {
+      width: 16px;
+      margin-left: 14.5px;
+      margin-right: 14.5px;
+    }
+    
+    a.social-icon:hover {
+      opacity: 1;
+      background-color: #F6306E;
+    }
+    
+    span {
+      border: 0px solid #0470FE; 
+      background-color: #0470FE;
+      -moz-transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      transition: all 0.3s ease-in-out;
+    }
+    
+    a.t-blue:hover {
+      opacity: 1;
+    }
+    
+    a.t-blue:hover span {
+      border: 6px solid #0470FE;
+      margin-right: 6px;
+    }
+    
+    a.t-blue.iron-selected span {
+      border: 6px solid #0470FE;
+      margin-right: 6px;
     }
 
     </style>
 
     <div id="sidebar" class="b-white">
-      <iron-selector selected="[[selectedItem]]">
-        <a href="">
-          <strong>hello</strong>
-        </a>
-      </iron-selector>
-      <iron-selector selected="[[selectedItem]]">
-        <a href="">
-          <strong>hello</strong>
-        </a>
-      </iron-selector>
-      <iron-selector selected="[[selectedItem]]">
-        <a href="">
-          <strong>hello</strong>
-        </a>
-      </iron-selector>
+      <div class="inside">
+        <div class="center pad-top pad-bottom-md">
+          <a href="/">
+            <img src="/images/logo/logo.svg">
+          </a>
+        </div>
+        
+        <div class="pad-horizontal-md pad-bottom">
+          <iron-selector selected="[[selectedItem]]">
+            <small class="t-upper t-pink">Current work</small>
+            <a href="/devsec/" class="t-blue block space-top-sm pad-bottom-sm">
+              <span></span>
+              <strong>The DevSec project</strong>
+            </a>
+            <small class="t-upper t-pink">Past work</small>
+            <a href="/blok/" class="t-blue block space-top-sm">
+              <span></span>
+              <strong>Blok mobile app</strong>
+            </a>
+            <a href="/radish/" class="t-blue block">
+              <span></span>
+              <strong>Radish mobile app</strong>
+            </a>
+            <a href="/chef/" class="t-blue block">
+              <span></span>
+              <strong>Chef Compliance app</strong>
+            </a>
+            <a href="/prestige/" class="t-blue block">
+              <span></span>
+              <strong>The Prestige project</strong>
+            </a>
+            <a href="/f5/" class="t-blue block">
+              <span></span>
+              <strong>F5 Security labs</strong>
+            </a>
+            <a href="/rockstar/" class="t-blue block">
+              <span></span>
+              <strong>Red Dead Redemption</strong>
+            </a>
+            <a href="/smilebox/" class="t-blue block pad-bottom-sm">
+              <span></span>
+              <strong>Smilebox app</strong>
+            </a>
+          </iron-selector>
+          
+          <small class="t-upper t-pink">About Hannah</small>
+          <p class="block space-top-sm">
+            <strong>Hannah Kyoko Maddy</strong> is a full-stack product designer specializing in enterprise and consumer friendly application design.
+          </p>
+          <div class="row  space-top-sm">
+            <a href="mailto:hannah@modernista.co" class="social-icon space-right-sm">
+              <img class="icon" src="/images/logo/mail.svg">
+            </a>
+            <a href="https://github.com/hannah-radish" class="social-icon space-right-sm">
+              <img class="icon" src="/images/logo/github.svg">
+            </a>
+            <a href="https://www.linkedin.com/in/hannah-maddy-97278041/" class="social-icon">
+              <img class="icon" src="/images/logo/linkedin.svg">
+            </a>
+          </div>
+          
+        </div>
+      </div>
     </div>
   </template>
 

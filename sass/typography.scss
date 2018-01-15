@@ -47,13 +47,13 @@ p, small, a {
 }
 
 h1 {
-  font-size: 3em;
-  line-height: 1em;
+  font-size: 2em;
+  line-height: 1.2em;
 }
 
 h2 {
-  font-size: 1.8em;
-  line-height: 1em;
+  font-size: 1.6em;
+  line-height: 1.2em;
 }
 
 h3 {
@@ -64,7 +64,7 @@ h4, p, a {
   font-size: 1em;
 }
 
-small {
+small, .small {
   font-size: 10px;
 }
 
