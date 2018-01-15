@@ -23,12 +23,20 @@ metaDataFormat = "yaml"
   forum = "https://discourse.gohugo.io/"
   ## Google Tag Manager
   gtmid = ""
+  ignoreFiles = ["node_modules/.*"]
+  contentDir = "content"
 
   # First one is picked as the Twitter card image if not set on page.
   images = ["images/gohugoio-card.png"]
 
   flex_box_interior_classes = "flex-auto w-100 w-40-l mr3 mb3 bg-white ba b--moon-gray nested-copy-line-height"
 
+
+[[menu.global]]
+  name = "DevSec"
+  weight = 1
+  identifier = "devsec"
+  url = "/devsec/"
 
 [[menu.global]]
   name = "Features"

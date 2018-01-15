@@ -666,6 +666,9 @@ a {
   border: 8px solid white;
   border-radius: 50%; }
 
+.inside-content-width {
+  width: 25vw; }
+
 .home-images {
   bottom: 0;
   right: 0; }
@@ -1236,6 +1239,9 @@ a {
   background-size: cover;
   border: 8px solid white;
   border-radius: 50%; }
+
+.inside-content-width {
+  width: 25vw; }
 
 .home-images {
   bottom: 0;
