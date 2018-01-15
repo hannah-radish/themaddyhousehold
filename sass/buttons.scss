@@ -1,0 +1,32 @@
+@import
+'colors.scss',
+'typography.scss',
+'elements.scss';
+
+// button _classes
+
+a {
+  @extend %transition;
+  text-decoration: underline;
+  cursor: pointer;
+
+  &:hover {
+    opacity: $devsec_opacity;
+  }
+}
+
+ a.t-mint {
+
+  &:hover {
+    color: $devsec-mint;
+    opacity: $devsec_opacity;
+  }
+}
+
+a.t-purple {
+
+ &:hover {
+   color: $devsec-purple;
+   opacity: $devsec_opacity;
+ }
+}

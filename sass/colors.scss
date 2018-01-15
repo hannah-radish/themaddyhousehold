@@ -1,0 +1,59 @@
+//color _variables
+
+$devsec_mint: #00FFDA;
+$devsec_purple: #D903FF;
+$devsec_white: #ffffff;
+$devsec_black: #000000;
+$devsec_gray: #212334;
+$devsec_opacity: 0.6;
+
+//font color _classes
+
+.t-mint {
+  color: $devsec_mint;
+}
+
+.t-purple {
+  color: $devsec_purple;
+}
+
+.t-white {
+  color: $devsec_white;
+}
+
+.t-black {
+  color: $devsec_black;
+}
+
+.t-gray {
+  color: $devsec_gray;
+}
+
+//background color _classes
+
+.b-mint {
+  background-color: $devsec_mint;
+}
+
+.b-purple {
+  background-color: $devsec_purple;
+}
+
+.b-white {
+  background-color: $devsec_white;
+}
+
+.b-black {
+  background-color: $devsec_black;
+}
+
+.b-gray {
+  background-color: $devsec_gray;
+}
+
+.b-gradient {
+  background: -moz-linear-gradient(-45deg, #00CBD5 0%, $devsec_purple 100%);
+  background: -webkit-linear-gradient(-45deg, #00CBD5 0%,$devsec_purple 100%);
+  background: linear-gradient(135deg, #00CBD5 0%,$devsec_purple 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00CBD5', endColorstr='$devsec_purple',GradientType=1 );
+}

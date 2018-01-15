@@ -1,0 +1,35 @@
+.t-mint {
+  color: #00FFDA; }
+
+.t-purple {
+  color: #D903FF; }
+
+.t-white {
+  color: #ffffff; }
+
+.t-black {
+  color: #000000; }
+
+.t-gray {
+  color: #212334; }
+
+.b-mint {
+  background-color: #00FFDA; }
+
+.b-purple {
+  background-color: #D903FF; }
+
+.b-white {
+  background-color: #ffffff; }
+
+.b-black {
+  background-color: #000000; }
+
+.b-gray {
+  background-color: #212334; }
+
+.b-gradient {
+  background: -moz-linear-gradient(-45deg, #00CBD5 0%, #D903FF 100%);
+  background: -webkit-linear-gradient(-45deg, #00CBD5 0%, #D903FF 100%);
+  background: linear-gradient(135deg, #00CBD5 0%, #D903FF 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00CBD5', endColorstr='$devsec_purple',GradientType=1 ); }
