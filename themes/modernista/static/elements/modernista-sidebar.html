@@ -1,0 +1,63 @@
+<link rel="import" href="../node_modules/@bower_components/polymer/polymer-element.html">
+<link rel="import" href="../node_modules/@bower_components/iron-selector/iron-selector.html">
+
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="modernista-sidebar">
+  <template>
+    <style include="shared-styles">
+    
+    #sidebar {
+      width: 20%;
+      height: 100%;
+      position: fixed;
+    }
+
+    </style>
+
+    <div id="sidebar" class="b-white">
+      <iron-selector selected="[[selectedItem]]">
+        <a href="">
+          <strong>hello</strong>
+        </a>
+      </iron-selector>
+      <iron-selector selected="[[selectedItem]]">
+        <a href="">
+          <strong>hello</strong>
+        </a>
+      </iron-selector>
+      <iron-selector selected="[[selectedItem]]">
+        <a href="">
+          <strong>hello</strong>
+        </a>
+      </iron-selector>
+    </div>
+  </template>
+
+  <script>
+    /**
+     * # Modernista Sidebar
+     *
+     * The standard Modernista sidebar
+     *
+     *
+     * @customElement
+     * @polymer
+     * @summary Render a navigational sidebar
+     * @demo elements/demo/modernista-sidebar.html
+     */
+    class modernistaSidebar extends Polymer.Element {
+      static get is() { return 'modernista-sidebar' }
+      static get properties() {
+        return {
+           selectedItem: {
+             notify: true,
+             value: 0
+           }
+        }
+      }
+
+    }
+    window.customElements.define(modernistaSidebar.is, modernistaSidebar);
+  </script>
+</dom-module>

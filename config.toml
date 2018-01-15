@@ -1,12 +1,12 @@
-baseURL = "https://dev-sec.io/"
+baseURL = "http://modernista.co/"
 languageCode = "en-us"
-title = "DevSec Hardening Framework"
-theme = "devsec"
+title = "The Modernista"
+theme = "modernista"
 metaDataFormat = "yaml"
 
 #CUSTOM PARAMS
 [params]
-  description = "The world’s fastest framework for building websites"
+  description = "The portfolio of full-stack product designer, Hannah Kyoko Maddy."
   ## Used for views in rendered HTML (i.e., rather than using the .Hugo variable)
   release = "0.30.2"
   ## Setting this to true will add a "noindex" to *EVERY* page on the site

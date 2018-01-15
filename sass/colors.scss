@@ -1,59 +1,60 @@
 //color _variables
 
-$devsec_mint: #00FFDA;
-$devsec_purple: #D903FF;
-$devsec_white: #ffffff;
-$devsec_black: #000000;
-$devsec_gray: #212334;
-$devsec_opacity: 0.6;
+$modernista_blue: #0470FE;
+$modernista_teal: #00B9B3;
+$modernista_pink: #F6306E;
+$modernista_white: #ffffff;
+$modernista_black: #000000;
+$modernista_tan: #F3EFCD;
 
 //font color _classes
 
-.t-mint {
-  color: $devsec_mint;
+.t-blue {
+  color: $modernista_blue;
 }
 
-.t-purple {
-  color: $devsec_purple;
+.t-teal {
+  color: $modernista_teal;
 }
 
 .t-white {
-  color: $devsec_white;
+  color: $modernista_white;
 }
 
 .t-black {
-  color: $devsec_black;
+  color: $modernista_black;
 }
 
-.t-gray {
-  color: $devsec_gray;
+.t-pink {
+  color: $modernista_pink;
+}
+
+.t-tan {
+  color: $modernista_tan;
 }
 
 //background color _classes
 
-.b-mint {
-  background-color: $devsec_mint;
+.b-blue {
+  background-color: $modernista_blue;
 }
 
-.b-purple {
-  background-color: $devsec_purple;
+.b-teal {
+  background-color: $modernista_teal;
 }
 
 .b-white {
-  background-color: $devsec_white;
+  background-color: $modernista_white;
 }
 
 .b-black {
-  background-color: $devsec_black;
+  background-color: $modernista_black;
 }
 
-.b-gray {
-  background-color: $devsec_gray;
+.b-pink {
+  background-color: $modernista_pink;
 }
 
-.b-gradient {
-  background: -moz-linear-gradient(-45deg, #00CBD5 0%, $devsec_purple 100%);
-  background: -webkit-linear-gradient(-45deg, #00CBD5 0%,$devsec_purple 100%);
-  background: linear-gradient(135deg, #00CBD5 0%,$devsec_purple 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00CBD5', endColorstr='$devsec_purple',GradientType=1 );
+.b-tan {
+  background-color: $modernista_tan;
 }

@@ -1,0 +1,92 @@
+.t-blue {
+  color: #0470FE; }
+
+.t-teal {
+  color: #00B9B3; }
+
+.t-white {
+  color: #ffffff; }
+
+.t-black {
+  color: #000000; }
+
+.t-pink {
+  color: #F6306E; }
+
+.t-tan {
+  color: #F3EFCD; }
+
+.b-blue {
+  background-color: #0470FE; }
+
+.b-teal {
+  background-color: #00B9B3; }
+
+.b-white {
+  background-color: #ffffff; }
+
+.b-black {
+  background-color: #000000; }
+
+.b-pink {
+  background-color: #F6306E; }
+
+.b-tan {
+  background-color: #F3EFCD; }
+
+@font-face {
+  font-family: "Galano Grotesque";
+  src: url("/fonts/Rene Bieder - Galano Grotesque.otf") format("truetype");
+  src: font-url("/fonts/Rene Bieder - Galano Grotesque.otf?#iefix") format("embedded-opentype"), font-url("/fonts/Rene Bieder - Galano Grotesque.otf") format("woff"), font-url("/fonts/Rene Bieder - Galano Grotesque.otf") format("truetype"); }
+
+@font-face {
+  font-family: "Galano Grotesque SemiBold";
+  src: url("/fonts/Rene Bieder - Galano Grotesque SemiBold.otf") format("truetype");
+  src: font-url("/fonts/Rene Bieder - Galano Grotesque SemiBold.otf?#iefix") format("embedded-opentype"), font-url("/fonts/Rene Bieder - Galano Grotesque SemiBold.woff") format("woff"), font-url("/fonts/Rene Bieder - Galano Grotesque SemiBold.ttf") format("truetype"); }
+
+h1, h2, h3, h4 {
+  font-family: "Galano Grotesque";
+  color: #000000;
+  -webkit-font-smoothing: antialiased; }
+
+p, small, a {
+  font-family: "Galano Grotesque";
+  color: #000000;
+  margin: 0;
+  -webkit-font-smoothing: antialiased; }
+
+h1 {
+  font-size: 3em;
+  line-height: 1em; }
+
+h2 {
+  font-size: 1.8em;
+  line-height: 1em; }
+
+h3 {
+  font-size: 1.2em; }
+
+h4, p, a {
+  font-size: 1em; }
+
+small {
+  font-size: 10px; }
+
+strong {
+  font-family: "Galano Grotesque SemiBold";
+  font-weight: initial; }
+
+.t-upper {
+  font-family: "Galano Grotesque SemiBold";
+  font-weight: initial;
+  letter-spacing: 0.5em;
+  text-transform: uppercase; }
+
+.t-height {
+  line-height: 1.6em; }
+
+.t-left {
+  text-align: left; }
+
+.t-right {
+  text-align: right; }

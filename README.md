@@ -18,5 +18,5 @@
 
 ## Development
 
-* Custom elements can be developed in `themes/devsec/static/elements`
-* SASS styling is developed in `sass` and will automatically be built by `gulp serve` into `themes/devsec/static/css` and `themes/devsec/static/elements/shared-styles.html`
+* Custom elements can be developed in `themes/modernista/static/elements`
+* SASS styling is developed in `sass` and will automatically be built by `gulp serve` into `themes/modernista/static/css` and `themes/modernista/static/elements/shared-styles.html`

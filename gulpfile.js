@@ -20,12 +20,12 @@ const polymerCli = 'node node_modules/polymer-cli/bin/polymer.js '
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./themes/devsec/static/css'));
+    .pipe(gulp.dest('./themes/modernista/static/css'));
 });
 
 gulp.task('shared-styles', ['sass'], function() {
   gutil.log('Reading base.css into shared styles')
-  base_css = fs.readFileSync('./themes/devsec/static/css/app.css')
+  base_css = fs.readFileSync('./themes/modernista/static/css/app.css')
   content = `<link rel="import" href="../node_modules/@bower_components/polymer/polymer-element.html">
 <link rel="stylesheet" href="../node_modules/typeface-muli/index.css">
 <dom-module id="shared-styles">
@@ -37,7 +37,7 @@ gulp.task('shared-styles', ['sass'], function() {
     </style>
   </template>
 </dom-module>`
-  return fs.writeFileSync('./themes/devsec/static/elements/shared-styles.html', content)
+  return fs.writeFileSync('./themes/modernista/static/elements/shared-styles.html', content)
 })
 
 gulp.task('watch', ()=>{
@@ -45,7 +45,7 @@ gulp.task('watch', ()=>{
 })
 
 gulp.task('prepare', () => {
-  dst = 'themes/devsec/static/node_modules'
+  dst = 'themes/modernista/static/node_modules'
   src = 'node_modules'
   src_rel = path.relative(path.dirname(dst), src)
   if(fs.existsSync(dst)) {

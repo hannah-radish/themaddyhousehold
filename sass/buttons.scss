@@ -11,22 +11,14 @@ a {
   cursor: pointer;
 
   &:hover {
-    opacity: $devsec_opacity;
+    opacity: 0.8;
   }
 }
 
- a.t-mint {
+ a.t-tan {
 
   &:hover {
-    color: $devsec-mint;
-    opacity: $devsec_opacity;
+    color: $modernista-tan;
+    opacity: 0.8;
   }
-}
-
-a.t-purple {
-
- &:hover {
-   color: $devsec-purple;
-   opacity: $devsec_opacity;
- }
 }
