@@ -64,8 +64,8 @@ gulp.task('prepare', () => {
 gulp.task('serve', ['prepare', 'shared-styles'], () => {
   exec('hugo server --watch', (err, stdout, stderr) => {
     if(stdout != "") gutil.log('serve: ' + stdout);
-    if(stderr != "") gutil.logError('serve: ' + stderr);
-    if(err != null) gutil.logError('serve error: ' + err);
+    if(stderr != "") gutil.log('serve: ' + stderr);
+    if(err != null) gutil.log('serve error: ' + err);
   })
   return gulp.start('watch')
 })
