@@ -95,7 +95,7 @@
         </div>
 
         <div class="pad-horizontal-md pad-bottom">
-          <iron-selector selected="[[selectedItem]]">
+          <iron-selector id="work-selector" selected="{{selectedItem}}">
             <small class="t-upper t-pink">Current work</small>
             <a href="/devsec/" class="t-blue block space-top-sm pad-bottom-sm">
               <span></span>
@@ -170,10 +170,31 @@
       static get properties() {
         return {
            selectedItem: {
-             notify: true,
-             value: 0
+             observer: '_select',
            }
         }
+      }
+
+      ready() {
+        super.ready()
+        var sel = this.shadowRoot.querySelector("#work-selector")
+        var els = Array.from(sel.children).map(function(el){
+          var href = el.attributes['href']
+          if(href == null) return href;
+          return href.value
+        })
+        var idx = els.indexOf(window.location.pathname)
+        this.home = idx;
+        sel.select(idx)
+      }
+
+      _select(nu, _) {
+        if(nu == this.home) return; // nothing if no change from home
+        var sel = this.shadowRoot.querySelector("#work-selector")
+        var els = Array.from(sel.children)
+        var el = els[nu]
+        if(el.href == null) return; // nothing if no anchor
+        window.location.href = el.href;
       }
 
     }
