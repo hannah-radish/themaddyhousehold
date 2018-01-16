@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Modernista</title>
+
+    <link rel="stylesheet" href="/foundation/css/foundation.css" />
+    <link rel="stylesheet" href="/css/app.css" />
+    <script src="/node_modules/@bower_components/webcomponentsjs/webcomponents-loader.js" ></script>
+
+    <link rel="import" href="/elements/modernista-sidebar.html">
+  </head>
+  <body>
+    <!-- Nav -->
+    <modernista-sidebar>
+    </modernista-sidebar>
+    <!-- End Nav -->
+
+    <!-- Code that all your templates share, like a header -->
+    <!-- CONTENT -->
+
+    <script src="/jquery/dist/jquery.min.js"></script>
+    <script src="/foundation/js/foundation/foundation.js"></script>
+    <script src="/foundation/js/foundation/foundation.equalizer.js"></script>
+    <script src="/foundation/js/foundation/foundation.topbar.js"></script>
+
+    <script src="/js/app.js"></script>
+
+    <script type="text/javascript">
+    var $buoop = {vs:{i:9,f:15,o:12.1,s:5.1}};
+    $buoop.ol = window.onload;
+    window.onload=function(){
+      console.log($buoop);
+      try {if ($buoop.ol) $buoop.ol();}catch (e) {}
+      var e = document.createElement("script");
+      e.setAttribute("type", "text/javascript");
+      e.setAttribute("src", "//browser-update.org/update.js");
+      document.body.appendChild(e);
+    }
+
+    </script>
+
+
+
+  </body>
+</html>

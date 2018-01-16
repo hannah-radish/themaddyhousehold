@@ -3,6 +3,8 @@ const path = require('path')
 const gutil = require('gulp-util');
 const fs = require('fs')
 const sass = require('gulp-sass');
+const insert = require('gulp-insert');
+const serve = require('gulp-serve');
 var child_process = require('child_process')
 
 function exec(cmd, fn) {
@@ -20,12 +22,20 @@ const polymerCli = 'node node_modules/polymer-cli/bin/polymer.js '
 gulp.task('sass', function () {
   return gulp.src('./sass/**/*.scss')
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest('./themes/modernista/static/css'));
+    .pipe(gulp.dest('./public/css'));
+});
+
+gulp.task('html', function() {
+  template = fs.readFileSync('index.html', 'utf-8')
+  parts = template.split('<!-- CONTENT -->')
+  return gulp.src('./pages/**/*.html')
+    .pipe(insert.wrap(parts[0], parts[1]))
+    .pipe(gulp.dest('./public'))
 });
 
 gulp.task('shared-styles', ['sass'], function() {
   gutil.log('Reading base.css into shared styles')
-  base_css = fs.readFileSync('./themes/modernista/static/css/app.css')
+  base_css = fs.readFileSync('./public/css/app.css')
   content = `<link rel="import" href="../node_modules/@bower_components/polymer/polymer-element.html">
 <link rel="stylesheet" href="../node_modules/typeface-muli/index.css">
 <dom-module id="shared-styles">
@@ -37,36 +47,20 @@ gulp.task('shared-styles', ['sass'], function() {
     </style>
   </template>
 </dom-module>`
-  return fs.writeFileSync('./themes/modernista/static/elements/shared-styles.html', content)
+  return fs.writeFileSync('./elements/shared-styles.html', content)
 })
 
 gulp.task('watch', ()=>{
   gulp.watch('sass/**/*.scss', ['shared-styles'])
+  return gulp.watch('pages/**/*.html', ['html'])
 })
 
-gulp.task('prepare', () => {
-  dst = 'themes/modernista/static/node_modules'
-  src = 'node_modules'
-  src_rel = path.relative(path.dirname(dst), src)
-  if(fs.existsSync(dst)) {
-    if(!fs.lstatSync(dst).isSymbolicLink() ||
-      fs.readlinkSync(dst) !== src_rel) {
-      console.error("Path "+dst+" exists but is not the symlink we expect. Please remove it if this is by accident and try again.")
-      process.exit(1)
-    }
-    console.log('    > symlink '+src+' -> '+dst)
-  } else {
-    fs.symlinkSync(src_rel, dst)
-    console.log('[ok]  symlink '+src+' -> '+dst)
-  }
-})
-
-gulp.task('serve', ['prepare', 'shared-styles'], () => {
-  exec('hugo server --watch', (err, stdout, stderr) => {
-    if(stdout != "") gutil.log('serve: ' + stdout);
-    if(stderr != "") gutil.log('serve: ' + stderr);
-    if(err != null) gutil.log('serve error: ' + err);
+gulp.task('serverun', serve({
+    root: ['public', '.'],
+    port: 1313,
   })
+)
+gulp.task('serve', ['html', 'sass', 'serverun'], () => {
   return gulp.start('watch')
 })
 
