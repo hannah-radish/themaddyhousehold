@@ -1,5 +1,11 @@
+{{ define "title" }}
+  {{ .Title }} – {{ .Site.Title }}
+{{ end }}
+
+{{ define "main" }}
+
 <div class="b-blue container-inside pad-top-md pad-bottom">
-  <a href="/" class="t-tan space-horizontal-md"><strong><img class="arrow" src="/images/logo/arrow-back.svg">&nbsp;&nbsp;Please, take me back home</strong></a>
+  <a href="/" class="t-tan space-horizontal-md"><strong><img class="arrow" src="/images/logo/arrow.svg">Please, take me back home</strong></a>
   <div class="row relative pad-top-md align-middle ">
     <div class="space-horizontal-md inside-content-width">
       <!--title-->
@@ -16,7 +22,7 @@
       <p class="space-bottom-sm t-white">F5 was having difficulty engaging and reaching the global security audience.</p>
       <small class="t-upper t-tan">key responsibilities</small>
       <!--key responsibilities-->
-      <p class="t-white">F5 was having difficulty engaging and reaching the global security audience.</p>
+      <p class="space-bottom-sm t-white">F5 was having difficulty engaging and reaching the global security audience.</p>
     </div>
     <div class="large-image box-shadow right" style="background-image:url('http://images.tritondigitalcms.com/6616/sites/115/2017/12/08073633/PB1201_STORY_CARO-Authority-HealthyOutside-DOG-20160818.jpeg')"></div>
   </div>
@@ -24,7 +30,7 @@
 
 <!--images-->
 <div class="b-grid-blue container-inside">
-  <div id="sampleimages" class='space-horizontal-md'>
+  <div class='space-horizontal-md'>
     <!--images row one-->
     <div class="row negative-height">
       <div class="large-4 medium-4 small-4 columns space-bottom-md">
@@ -44,7 +50,10 @@
         <!--process and discovery-->
         <p class="space-vertical-sm">F5 was having difficulty engaging and reaching the global security audience.</p>
       </div>
+      <!--image-->
       <div class="large-image box-shadow-blue right" style="background-image:url('http://images.tritondigitalcms.com/6616/sites/115/2017/12/08073633/PB1201_STORY_CARO-Authority-HealthyOutside-DOG-20160818.jpeg')"></div>
     </div>
   </div>
 </div>
+
+{{ end }}

@@ -13,9 +13,12 @@
   <body>
     <!-- Nav -->
     <nav>
-      <div class="row">
+      <div class="row align-middle" style="display: flex;">
+        <a class="space-left-md absolute" id="menu">
+          <img style="width: 32px" src="/images/logo/menu.svg">
+        </a>
         <div class="center">
-          <a href="/">
+          <a href="/" class="relative">
             <img id="logo" src="/images/logo/logo.svg">
           </a>
         </div>
@@ -46,8 +49,8 @@
       e.setAttribute("src", "//browser-update.org/update.js");
       document.body.appendChild(e);
     }
-    
-    $('nav').click(function () { $('modernista-sidebar').slideToggle('slow');});
+
+    $('#menu').click(function () { $('modernista-sidebar').slideToggle('slow');});
     console.log();
 
     </script>

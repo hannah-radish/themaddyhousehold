@@ -136,8 +136,12 @@ nav #logo {
     display: none;
   }
 
-  .container, .container-inside {
+  .container, .b-blue.container-inside, .b-pink.container-inside {
     margin-top: 60px;
+    width: 100%;
+  }
+
+  .container-inside {
     width: 100%;
   }
 
@@ -157,7 +161,7 @@ nav #logo {
     font-size: 1.8em;
   }
 
-  h1 {
+  h2 {
     font-size: 1.4em;
   }
 
