@@ -45,7 +45,8 @@
 .large-image {
   width: 30vw;
   height: 30vw;
-  background-size: cover;
+  background-size: auto;
+  background-attachment: fixed;
   border: 8px solid white;
 }
 

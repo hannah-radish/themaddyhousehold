@@ -1,4 +1,0 @@
----
-title: "DevSec"
-layout: devsec
----
