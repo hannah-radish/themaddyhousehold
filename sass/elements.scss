@@ -19,17 +19,32 @@
   box-shadow: 0px 45px 90px 0px rgba(33,35,52,0.5);
 }
 
+.box-shadow-blue {
+  -webkit-box-shadow: 0px 45px 90px 0px rgba(0,37,86,0.25);
+  -moz-box-shadow: 0px 45px 90px 0px rgba(0,37,86, 0.25);
+  box-shadow: 0px 45px 90px 0px rgba(0,37,86, 0.25);
+}
+
+.border {
+  border: 8px solid white;
+}
+
 .tag {
   width: auto;
   height: $medium_margin;
   line-height: $medium_margin;
-  padding-left: $small_margin;
-  padding-right: $small_margin;
+  width: 200px;
+  background-color: $modernista_tan;
+
+  small {
+    text-align: center;
+    display: inherit;
+  }
 }
 
 .large-image {
-  width: 35vw;
-  height: 35vw;
+  width: 30vw;
+  height: 30vw;
   background-size: cover;
   border: 8px solid white;
 }
@@ -57,7 +72,7 @@
 }
 
 .inside-content-width {
-  width: 25vw;
+  width: 38vw;
 }
 
 .home-images {

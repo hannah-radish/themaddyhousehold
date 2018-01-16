@@ -34,6 +34,10 @@
 .b-tan {
   background-color: #F3EFCD; }
 
+.b-grid-blue {
+  background-image: url("/images/background/grid-blue.png");
+  background-size: 50%; }
+
 .t-blue {
   color: #0470FE; }
 
@@ -70,10 +74,14 @@
 .b-tan {
   background-color: #F3EFCD; }
 
+.b-grid-blue {
+  background-image: url("/images/background/grid-blue.png");
+  background-size: 50%; }
+
 @font-face {
-  font-family: "Galano Grotesque";
-  src: url("/fonts/Rene Bieder - Galano Grotesque.otf") format("truetype");
-  src: font-url("/fonts/Rene Bieder - Galano Grotesque.otf?#iefix") format("embedded-opentype"), font-url("/fonts/Rene Bieder - Galano Grotesque.otf") format("woff"), font-url("/fonts/Rene Bieder - Galano Grotesque.otf") format("truetype"); }
+  font-family: "Galano Grotesque Medium";
+  src: url("/fonts/Rene Bieder - Galano Grotesque Medium.otf") format("truetype");
+  src: font-url("/fonts/Rene Bieder - Galano Grotesque Medium.otf?#iefix") format("embedded-opentype"), font-url("/fonts/Rene Bieder - Galano Grotesque Medium.otf") format("woff"), font-url("/fonts/Rene Bieder - Galano Grotesque Medium.otf") format("truetype"); }
 
 @font-face {
   font-family: "Galano Grotesque SemiBold";
@@ -81,12 +89,12 @@
   src: font-url("/fonts/Rene Bieder - Galano Grotesque SemiBold.otf?#iefix") format("embedded-opentype"), font-url("/fonts/Rene Bieder - Galano Grotesque SemiBold.woff") format("woff"), font-url("/fonts/Rene Bieder - Galano Grotesque SemiBold.ttf") format("truetype"); }
 
 h1, h2, h3, h4 {
-  font-family: "Galano Grotesque";
+  font-family: "Galano Grotesque Medium";
   color: #000000;
   -webkit-font-smoothing: antialiased; }
 
 p, small, a {
-  font-family: "Galano Grotesque";
+  font-family: "Galano Grotesque Medium";
   color: #000000;
   margin: 0;
   -webkit-font-smoothing: antialiased; }
@@ -163,6 +171,10 @@ strong {
 .b-tan {
   background-color: #F3EFCD; }
 
+.b-grid-blue {
+  background-image: url("/images/background/grid-blue.png");
+  background-size: 50%; }
+
 .t-blue {
   color: #0470FE; }
 
@@ -199,10 +211,14 @@ strong {
 .b-tan {
   background-color: #F3EFCD; }
 
+.b-grid-blue {
+  background-image: url("/images/background/grid-blue.png");
+  background-size: 50%; }
+
 @font-face {
-  font-family: "Galano Grotesque";
-  src: url("/fonts/Rene Bieder - Galano Grotesque.otf") format("truetype");
-  src: font-url("/fonts/Rene Bieder - Galano Grotesque.otf?#iefix") format("embedded-opentype"), font-url("/fonts/Rene Bieder - Galano Grotesque.otf") format("woff"), font-url("/fonts/Rene Bieder - Galano Grotesque.otf") format("truetype"); }
+  font-family: "Galano Grotesque Medium";
+  src: url("/fonts/Rene Bieder - Galano Grotesque Medium.otf") format("truetype");
+  src: font-url("/fonts/Rene Bieder - Galano Grotesque Medium.otf?#iefix") format("embedded-opentype"), font-url("/fonts/Rene Bieder - Galano Grotesque Medium.otf") format("woff"), font-url("/fonts/Rene Bieder - Galano Grotesque Medium.otf") format("truetype"); }
 
 @font-face {
   font-family: "Galano Grotesque SemiBold";
@@ -210,12 +226,12 @@ strong {
   src: font-url("/fonts/Rene Bieder - Galano Grotesque SemiBold.otf?#iefix") format("embedded-opentype"), font-url("/fonts/Rene Bieder - Galano Grotesque SemiBold.woff") format("woff"), font-url("/fonts/Rene Bieder - Galano Grotesque SemiBold.ttf") format("truetype"); }
 
 h1, h2, h3, h4 {
-  font-family: "Galano Grotesque";
+  font-family: "Galano Grotesque Medium";
   color: #000000;
   -webkit-font-smoothing: antialiased; }
 
 p, small, a {
-  font-family: "Galano Grotesque";
+  font-family: "Galano Grotesque Medium";
   color: #000000;
   margin: 0;
   -webkit-font-smoothing: antialiased; }
@@ -264,6 +280,11 @@ strong {
   float: right;
   height: 100%; }
 
+.container-inside {
+  width: 75%;
+  float: right;
+  height: auto; }
+
 .container-height {
   height: 70%; }
 
@@ -275,6 +296,9 @@ strong {
 
 .fit-height {
   height: fit-content; }
+
+.negative-height {
+  margin-top: -45px; }
 
 .row {
   max-width: 100%;
@@ -450,16 +474,27 @@ a {
   -moz-box-shadow: 0px 45px 90px 0px rgba(33, 35, 52, 0.5);
   box-shadow: 0px 45px 90px 0px rgba(33, 35, 52, 0.5); }
 
+.box-shadow-blue {
+  -webkit-box-shadow: 0px 45px 90px 0px rgba(0, 37, 86, 0.25);
+  -moz-box-shadow: 0px 45px 90px 0px rgba(0, 37, 86, 0.25);
+  box-shadow: 0px 45px 90px 0px rgba(0, 37, 86, 0.25); }
+
+.border {
+  border: 8px solid white; }
+
 .tag {
   width: auto;
   height: 45px;
   line-height: 45px;
-  padding-left: 16px;
-  padding-right: 16px; }
+  width: 200px;
+  background-color: #F3EFCD; }
+  .tag small {
+    text-align: center;
+    display: inherit; }
 
 .large-image {
-  width: 35vw;
-  height: 35vw;
+  width: 30vw;
+  height: 30vw;
   background-size: cover;
   border: 8px solid white; }
 
@@ -483,7 +518,7 @@ a {
   border-radius: 50%; }
 
 .inside-content-width {
-  width: 25vw; }
+  width: 38vw; }
 
 .home-images {
   bottom: 0;

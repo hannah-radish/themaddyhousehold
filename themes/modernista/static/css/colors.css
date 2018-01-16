@@ -33,3 +33,7 @@
 
 .b-tan {
   background-color: #F3EFCD; }
+
+.b-grid-blue {
+  background-image: url("/images/background/grid-blue.png");
+  background-size: 50%; }

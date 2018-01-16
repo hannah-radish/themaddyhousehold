@@ -34,10 +34,14 @@
 .b-tan {
   background-color: #F3EFCD; }
 
+.b-grid-blue {
+  background-image: url("/images/background/grid-blue.png");
+  background-size: 50%; }
+
 @font-face {
-  font-family: "Galano Grotesque";
-  src: url("/fonts/Rene Bieder - Galano Grotesque.otf") format("truetype");
-  src: font-url("/fonts/Rene Bieder - Galano Grotesque.otf?#iefix") format("embedded-opentype"), font-url("/fonts/Rene Bieder - Galano Grotesque.otf") format("woff"), font-url("/fonts/Rene Bieder - Galano Grotesque.otf") format("truetype"); }
+  font-family: "Galano Grotesque Medium";
+  src: url("/fonts/Rene Bieder - Galano Grotesque Medium.otf") format("truetype");
+  src: font-url("/fonts/Rene Bieder - Galano Grotesque Medium.otf?#iefix") format("embedded-opentype"), font-url("/fonts/Rene Bieder - Galano Grotesque Medium.otf") format("woff"), font-url("/fonts/Rene Bieder - Galano Grotesque Medium.otf") format("truetype"); }
 
 @font-face {
   font-family: "Galano Grotesque SemiBold";
@@ -45,12 +49,12 @@
   src: font-url("/fonts/Rene Bieder - Galano Grotesque SemiBold.otf?#iefix") format("embedded-opentype"), font-url("/fonts/Rene Bieder - Galano Grotesque SemiBold.woff") format("woff"), font-url("/fonts/Rene Bieder - Galano Grotesque SemiBold.ttf") format("truetype"); }
 
 h1, h2, h3, h4 {
-  font-family: "Galano Grotesque";
+  font-family: "Galano Grotesque Medium";
   color: #000000;
   -webkit-font-smoothing: antialiased; }
 
 p, small, a {
-  font-family: "Galano Grotesque";
+  font-family: "Galano Grotesque Medium";
   color: #000000;
   margin: 0;
   -webkit-font-smoothing: antialiased; }

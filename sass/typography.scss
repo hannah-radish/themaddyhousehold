@@ -3,11 +3,11 @@
 // local fonts
 
 @font-face {
-  font-family: "Galano Grotesque";
-  src: url('/fonts/Rene Bieder - Galano Grotesque.otf') format('truetype');
-  src: font-url('/fonts/Rene Bieder - Galano Grotesque.otf?#iefix') format('embedded-opentype'),
-  font-url('/fonts/Rene Bieder - Galano Grotesque.otf') format('woff'),
-  font-url('/fonts/Rene Bieder - Galano Grotesque.otf') format('truetype')
+  font-family: "Galano Grotesque Medium";
+  src: url('/fonts/Rene Bieder - Galano Grotesque Medium.otf') format('truetype');
+  src: font-url('/fonts/Rene Bieder - Galano Grotesque Medium.otf?#iefix') format('embedded-opentype'),
+  font-url('/fonts/Rene Bieder - Galano Grotesque Medium.otf') format('woff'),
+  font-url('/fonts/Rene Bieder - Galano Grotesque Medium.otf') format('truetype')
 }
 
 @font-face {
@@ -20,7 +20,7 @@
 
 //font _variables
 
-$regular_font: "Galano Grotesque";
+$regular_font: "Galano Grotesque Medium";
 $semibold_font: "Galano Grotesque SemiBold";
 
 %heading_font {

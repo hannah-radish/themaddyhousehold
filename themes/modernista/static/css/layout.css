@@ -6,6 +6,11 @@
   float: right;
   height: 100%; }
 
+.container-inside {
+  width: 75%;
+  float: right;
+  height: auto; }
+
 .container-height {
   height: 70%; }
 
@@ -17,6 +22,9 @@
 
 .fit-height {
   height: fit-content; }
+
+.negative-height {
+  margin-top: -45px; }
 
 .row {
   max-width: 100%;
