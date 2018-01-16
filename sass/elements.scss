@@ -202,7 +202,21 @@ nav #logo {
  }
 }
 
-@media all and (max-width: 580px) {
+@media all and (max-width: 600px) {
+
+  .medium-image {
+    width: 60vw;
+    height: 60vw;
+  }
+
+  .small-circle-image {
+    width: 12.5vw;
+    height: 12.5vw;
+  }
+
+}
+
+@media all and (max-width: 450px) {
 
   .medium-image {
     width: 70vw;
@@ -213,5 +227,4 @@ nav #logo {
     width: 20vw;
     height: 20vw;
   }
-
 }
