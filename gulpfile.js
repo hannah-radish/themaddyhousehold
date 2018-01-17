@@ -5,6 +5,7 @@ const fs = require('fs')
 const sass = require('gulp-sass');
 const insert = require('gulp-insert');
 const serve = require('gulp-serve');
+const merge = require('merge-stream');
 var child_process = require('child_process')
 
 function exec(cmd, fn) {
@@ -49,6 +50,23 @@ gulp.task('shared-styles', ['sass'], function() {
 </dom-module>`
   return fs.writeFileSync('./elements/shared-styles.html', content)
 })
+
+gulp.task('dist', ['html', 'sass'], () => {
+  return merge(...[
+    gulp.src('./public/**/*')
+      .pipe(gulp.dest('./dist')),
+    gulp.src('./elements/**/*')
+      .pipe(gulp.dest('./dist/elements/')),
+    gulp.src('./node_modules/typeface-muli/**/*')
+      .pipe(gulp.dest('./dist/node_modules/typeface-muli/')),
+    gulp.src('./node_modules/@bower_components/**/*')
+      .pipe(gulp.dest('./dist/node_modules/@bower_components/')),
+  ])
+})
+gulp.task('serve-dist', ['dist'], serve({
+  root: ['dist'],
+  port: 1313,
+}))
 
 gulp.task('watch', ()=>{
   gulp.watch('sass/**/*.scss', ['shared-styles'])

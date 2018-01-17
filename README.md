@@ -20,3 +20,17 @@
 
 * Custom elements can be developed in `themes/modernista/static/elements`
 * SASS styling is developed in `sass` and will automatically be built by `gulp serve` into `themes/modernista/static/css` and `themes/modernista/static/elements/shared-styles.html`
+
+## Build and deployment
+
+```
+gulp dist
+```
+
+This will build your entires site in the `dist` folder yayyyyy!!
+
+If you want to build and see the built site run:
+
+```
+gulp serve-dist
+```
