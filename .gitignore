@@ -3,5 +3,10 @@ public/*.html
 public/css
 public/devsec
 public/f5
+public/prestige
+public/radish
+public/rockstar
+public/vivacity
+public/zipline
 .cache
 dist
