@@ -9,9 +9,11 @@ a {
   @extend %transition;
   text-decoration: none;
   cursor: pointer;
+  font-weight: bold;
 
   &:hover {
     opacity: 0.8;
+    color: $color_yellow;
   }
 }
 

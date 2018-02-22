@@ -51,7 +51,7 @@ h1 {
 }
 
 h2 {
-  font-size: 1.2em;
+  font-size: 1.4em;
   font-family: $semibold_font;
   font-weight: initial;
   letter-spacing: 0.5em;
@@ -75,6 +75,14 @@ small, .small {
   letter-spacing: 0.5em;
   text-transform: uppercase;
   font-size: 10px;
+}
+
+hr {
+  border: solid $color_yellow;
+  border-width: 10px 0 0;
+  clear: both;
+  margin: 0;
+  height: 0;
 }
 
 .no-margin {

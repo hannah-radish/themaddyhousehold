@@ -10,6 +10,15 @@ $small_margin: 16px;
   display: flex;
 }
 
+.block {
+  display: block;
+}
+
+.columns {
+  display: inherit;
+  float: initial !important;
+}
+
 //margin _classes
 
 .space-left {
