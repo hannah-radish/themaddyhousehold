@@ -1,55 +1,12 @@
 //layout _variables
 
-$default_margin: 15%;
+$default_margin: 150px;
 $medium_margin: 45px;
 $small_margin: 16px;
-
-$default_height: 70%;
-$medium_height: 50%;
-
-//width and height _classes
-
-.browser-height {
-  height: 100%;
-}
-
-.container {
-  width: 75%;
-  float: right;
-  height: 100%;
-}
-
-.container-inside {
-  width: 75%;
-  float: right;
-  height: auto;
-}
-
-.container-height {
-  height: $default_height;
-}
-
-.container-height-md {
-  height: $medium_height !important;
-}
-
-.fill-height {
-  height: -webkit-fill-available;
-}
-
-.fit-height {
-  height: fit-content;
-}
-
-.negative-height {
-  margin-top: -45px;
-}
-
 
 //layout _classes
 
 .row {
-  max-width: 100%;
   display: flex;
 }
 
@@ -225,6 +182,7 @@ $medium_height: 50%;
 }
 
 .right {
+  margin-left: auto;
   float: right;
   right: 0;
 }
@@ -232,6 +190,12 @@ $medium_height: 50%;
 .center {
   text-align: center;
   margin: 0 auto;
+}
+
+.center-flex {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .vertical {

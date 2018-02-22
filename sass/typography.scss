@@ -25,13 +25,13 @@ $semibold_font: "Galano Grotesque SemiBold";
 
 %heading_font {
   font-family: $regular-font;
-  color: $modernista_black;
+  color: $color_black;
   -webkit-font-smoothing: antialiased;
 }
 
 %body_font {
   font-family: $regular-font;
-  color: $modernista_black;
+  color: $color_black;
   margin: 0;
   -webkit-font-smoothing: antialiased;
 }
@@ -48,41 +48,39 @@ p, small, a {
 
 h1 {
   font-size: 2em;
-  line-height: 1.2em;
 }
 
 h2 {
-  font-size: 1.6em;
-  line-height: 1.2em;
-}
-
-h3 {
   font-size: 1.2em;
-}
-
-h4, p, a {
-  font-size: 14px;
-}
-
-small, .small {
-  font-size: 10px;
-}
-
-strong {
-  font-family: $semibold_font;
-  font-weight: initial;
-}
-
-.t-upper {
   font-family: $semibold_font;
   font-weight: initial;
   letter-spacing: 0.5em;
   text-transform: uppercase;
 }
 
-.t-height {
-  line-height: 1em;
+h4, p, a {
+  font-size: 14px;
 }
+
+h4 {
+  font-family: $semibold_font;
+  font-weight: initial;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+}
+
+small, .small {
+  font-family: $semibold_font;
+  font-weight: initial;
+  letter-spacing: 0.5em;
+  text-transform: uppercase;
+  font-size: 10px;
+}
+
+.no-margin {
+  margin: 0;
+}
+
 
 .t-left {
   text-align: left;

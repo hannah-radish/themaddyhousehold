@@ -3,52 +3,37 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Modernista</title>
-
-    <link rel="apple-touch-icon" sizes="57x57" href="/icon/apple-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="/icon/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="/icon/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="/icon/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="/icon/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="/icon/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="/icon/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="/icon/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="/icon/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="/icon/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/icon/favicon-16x16.png">
-    <link rel="manifest" href="/icon/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="/icon/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
-
+    <title>The Maddy Household</title>
+    
     <link rel="stylesheet" href="/foundation/css/foundation.css" />
     <link rel="stylesheet" href="/css/app.css" />
     <script src="/node_modules/@bower_components/webcomponentsjs/webcomponents-loader.js" ></script>
 
-    <link rel="import" href="/elements/modernista-sidebar.html">
   </head>
   <body>
     <!-- Nav -->
     <nav>
-      <div class="row align-middle" style="display: flex;">
-        <a class="space-left-md absolute" id="menu">
-          <img style="width: 32px" src="/images/logo/menu.svg">
+      <div class="row align-middle vertical">
+        <a href="/">
+          <h4 class="no-margin">The maddy's</h4>
         </a>
-        <div class="center">
-          <a href="/" class="relative">
-            <img id="logo" src="/images/logo/logo.svg">
-          </a>
-        </div>
+        <a class="btn-square right" href="mailto:hannah@radish-life.com"></a>
       </div>
     </nav>
-    <modernista-sidebar>
-    </modernista-sidebar>
     <!-- End Nav -->
 
     <!-- Code that all your templates share, like a header -->
     <!-- CONTENT -->
+    
+    <!-- Footer -->
+    
+    <footer class="center">
+      <p class="t-gray pad-bottom-sm">Created by Hannah Maddy</p>
+    </footer>
+    
+    <!-- End Footer -->
+    
+    
 
     <script src="/jquery/dist/jquery.min.js"></script>
     <script src="/foundation/js/foundation/foundation.js"></script>
@@ -68,45 +53,6 @@
       e.setAttribute("src", "//browser-update.org/update.js");
       document.body.appendChild(e);
     }
-
-    $('#menu').click(function () { $('modernista-sidebar').slideToggle('slow');});
-
-    $("#scrollTo").click(function() {
-      $('html, body').animate({
-          scrollTop: $("#scrollPos").offset().top
-      }, 500);
-    });
-
-    $.fn.moveIt = function(){
-      var $window = $(window);
-      var instances = [];
-
-      $(this).each(function(){
-        instances.push(new moveItItem($(this)));
-      });
-
-      window.addEventListener('scroll', function(){
-        var scrollTop = $window.scrollTop();
-        instances.forEach(function(inst){
-          inst.update(scrollTop);
-        });
-      }, {passive: true});
-    }
-
-    var moveItItem = function(el){
-      this.el = $(el);
-      this.speed = parseInt(this.el.attr('data-scroll-speed'));
-    };
-
-    moveItItem.prototype.update = function(scrollTop){
-      this.el.css('transform', 'translateY(' + -(scrollTop / this.speed) + 'px)');
-    };
-
-    // Initialization
-    $(function(){
-      $('[data-scroll-speed]').moveIt();
-    });
-
 
     </script>
 

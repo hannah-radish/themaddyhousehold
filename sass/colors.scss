@@ -1,85 +1,30 @@
 //color _variables
 
-$modernista_blue: #0470FE;
-$modernista_teal: #00B9B3;
-$modernista_pink: #F6306E;
-$modernista_purple: #7916C8;
-$modernista_white: #ffffff;
-$modernista_black: #000000;
-$modernista_tan: #F3EFCD;
+$color_yellow: #F7CE41;
+$color_gray: #C2BFC0;
+$color_black: #0A1713;
 
 //font color _classes
 
-.t-blue {
-  color: $modernista_blue;
+.t-yellow {
+  color: $color_yellow;
 }
 
-.t-teal {
-  color: $modernista_teal;
-}
-
-.t-white {
-  color: $modernista_white;
+.t-gray {
+  color: $color_gray;
 }
 
 .t-black {
-  color: $modernista_black;
+  color: $color_black;
 }
 
-.t-pink {
-  color: $modernista_pink;
-}
-
-.t-purple {
-  color: $modernista_purple;
-}
-
-.t-tan {
-  color: $modernista_tan;
-}
 
 //background color _classes
 
-.b-blue {
-  background-color: $modernista_blue;
-}
-
-.b-teal {
-  background-color: $modernista_teal;
-}
-
-.b-white {
-  background-color: $modernista_white;
-}
-
 .b-black {
-  background-color: $modernista_black;
+  background-color: $color_black;
 }
 
-.b-pink {
-  background-color: $modernista_pink;
-}
-
-.b-purple {
-  background-color: $modernista_purple;
-}
-
-.b-tan {
-  background-color: $modernista_tan;
-}
-
-.b-grid-blue {
-  background-image: url('/images/background/grid-blue.png');
-  background-size: 50%;
-}
-
-.b-grid-purple {
-  background-image: url('/images/background/grid-purple.png');
-  background-size: 50%;
-}
-
-
-.b-grid-pink {
-  background-image: url('/images/background/grid-pink.png');
-  background-size: 50%;
+.b-yellow {
+  background-color: $color_yellow;
 }
