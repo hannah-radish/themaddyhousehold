@@ -129,4 +129,9 @@ img.image-hover {
   .mobile-hide {
     display: none;
   }
+
+  .bg-image {
+    background-attachment: initial !important;
+    background-repeat: no-repeat;
+  }
 }
