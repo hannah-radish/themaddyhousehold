@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>The Maddy Household</title>
+
+    <link rel="stylesheet" href="foundation/css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="node_modules/@bower_components/webcomponentsjs/webcomponents-loader.js" ></script>
+
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <div class="row align-middle vertical">
+        <a class="columns" href="index.html">
+          <h4 class="no-margin">The maddy's</h4>
+        </a>
+        <a class="btn-square right columns" href="mailto:hannah@radish-life.com"></a>
+      </div>
+    </nav>
+    <!-- End Nav -->
+
+    <!-- Code that all your templates share, like a header -->
+    <div class="bg-image" style="background-image:url('images/IMG-4064.jpg')">
+</div>
+
+<div class="space-vertical">
+  <div class="row block">
+    <h2 class="columns">Hannah Maddy</h2>
+    <p class="t-gray pad-bottom-sm columns">Primary tenant</p>
+    <div class="large-8 medium-8 small-12 block columns slide-up">
+      <hr>
+      <div class="pad-vertical-md">
+        <p>Hannah Maddy works as a product designer for <a href="https://www.linkedin.com/in/hannah-maddy-97278041/" class="t-yellow">Netflix</a>. She has been working as an UX/product designer for 8+ years and has done work for brands such has Fuel1 Racing, The Ritz Carlton, Corona, Ford, Rockstar Games, Geico, Dell, AT&T, F5 Networks, and more. Hannah is also half Japanese and is fluent in Japanese.
+        </p>
+        <br>
+        <p>Hannah owns a home in Seattle and is currently renting it out to tenants. She bought her home in 2016 at <a href="https://www.zillow.com/homedetails/7706-Delridge-Way-SW-Seattle-WA-98106/48777832_zpid/" class="t-yellow">7706 Delridge Way SW</a> and has enjoyed redesigning and landscaping her home before the move to San Francisco.
+        </p>
+        <br>
+        <p>On her free time, Hannah enjoys hiking, trips to dog parks, exploring new eateries, interior design, and whisky tastings.
+        </p>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>
+<div class="space-bottom">
+  <div class="row align-middle">
+    <div class="large-3 medium-3 small-12 columns slide-up space-bottom-md">
+      <div class="image-container">
+        <img src="images/genMid.939856_1_1.jpg">
+      </div>
+    </div>
+    <div class="large-3 medium-3 small-12 columns slide-up space-bottom-md">
+      <div class="image-container">
+        <img src="images/2018-02-21 14.42.41.jpg">
+      </div>
+    </div>
+    <div class="large-3 medium-3 small-12 columns slide-up space-bottom-md">
+      <div class="image-container">
+        <img src="images/2018-02-21 14.41.26.jpg">
+      </div>
+    </div>
+    <div class="large-3 medium-3 small-12 columns slide-up space-bottom-md">
+      <div class="image-container">
+        <img src="images/IMG_2827.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="row align-middle">
+    <div class="large-3 medium-3 small-12 columns slide-up space-bottom-md">
+      <div class="image-container">
+        <img src="images/IMG_2552.jpg">
+      </div>
+    </div>
+    <div class="large-3 medium-3 small-12 columns slide-up space-bottom-md">
+      <div class="image-container">
+        <img src="images/IMG_2317.jpg">
+      </div>
+    </div>
+    <div class="large-3 medium-3 small-12 columns slide-up space-bottom-md">
+      <div class="image-container">
+        <img src="images/hannah-dom-2.jpg">
+      </div>
+    </div>
+    <div class="large-3 medium-3 small-12 columns slide-up space-bottom-md">
+      <div class="image-container">
+        <img src="images/dom-hannah.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Footer -->
+
+    <footer class="center">
+      <p class="t-gray pad-bottom-sm">Created by Hannah Maddy</p>
+    </footer>
+
+    <!-- End Footer -->
+
+
+
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="foundation/js/foundation/foundation.js"></script>
+    <script src="foundation/js/foundation/foundation.equalizer.js"></script>
+    <script src="foundation/js/foundation/foundation.topbar.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script type="text/javascript">
+    var $buoop = {vs:{i:9,f:15,o:12.1,s:5.1}};
+    $buoop.ol = window.onload;
+    window.onload=function(){
+      console.log($buoop);
+      try {if ($buoop.ol) $buoop.ol();}catch (e) {}
+      var e = document.createElement("script");
+      e.setAttribute("type", "text/javascript");
+      e.setAttribute("src", "//browser-update.org/update.js");
+      document.body.appendChild(e);
+    }
+
+    var $slide_up = $('.slide-up');
+    var $window = $(window);
+
+    function check_if_in_view() {
+      var window_height = $window.height();
+      var window_top_position = $window.scrollTop();
+      var window_bottom_position = (window_top_position + window_height);
+
+      $.each($slide_up, function() {
+        var $element = $(this);
+        var element_height = $element.outerHeight();
+        var element_top_position = $element.offset().top;
+        var element_bottom_position = (element_top_position + element_height);
+
+        //check to see if this current container is within viewport
+        if ((element_bottom_position >= window_top_position) &&
+            (element_top_position <= window_bottom_position)) {
+          $element.addClass('in-view');
+        } else {
+          $element.removeClass('in-view');
+        }
+      });
+    }
+
+    $window.on('scroll resize', check_if_in_view);
+    $window.trigger('scroll');
+
+    </script>
+
+
+
+  </body>
+</html>

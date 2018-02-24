@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>The Maddy Household</title>
+
+    <link rel="stylesheet" href="foundation/css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="node_modules/@bower_components/webcomponentsjs/webcomponents-loader.js" ></script>
+
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <div class="row align-middle vertical">
+        <a class="columns" href="index.html">
+          <h4 class="no-margin">The maddy's</h4>
+        </a>
+        <a class="btn-square right columns" href="mailto:hannah@radish-life.com"></a>
+      </div>
+    </nav>
+    <!-- End Nav -->
+
+    <!-- Code that all your templates share, like a header -->
+    <div class="bg-image" style="background-image:url('images/HH_goldengateview_1270x560_FitToBoxSmallDimension_Center.jpg')">
+</div>
+<div class="center">
+  <div class="tag-label b-yellow mobile-hide">
+    <h4 class="t-black">The maddy household</h4>
+  </div>
+  <div class="tag-label b-yellow mobile-show">
+    <h4 class="t-black">The household</h4>
+  </div>
+</div>
+<div class="space-vertical">
+  <div class="row align-middle center-flex">
+    <div class="large-5 medium-5 small-12 space-bottom-md columns slide-up">
+      <button class="image-container b-black" onclick="window.location='hannah.html';">
+        <a class="btn-arrow"></a>
+        <img class="image-hover" src="images/hannah-alone.jpg">
+        <div class="tag-name-label center">
+          <h4 class="t-yellow">Hannah Maddy</h4>
+          <p class="t-gray">Primary tenant</p>
+        </div>
+      </button>
+    </div>
+    <div class="large-5 medium-5 small-12 space-bottom-md columns slide-up">
+      <button class="image-container b-black" onclick="window.location='dominik.html';">
+        <a class="btn-arrow"></a>
+        <img class="image-hover" src="images/IMAG0006.jpg">
+        <div class="tag-name-label center">
+          <h4 class="t-yellow">Dominik Richter</h4>
+          <p class="t-gray">Primary tenant</p>
+        </div>
+      </button>
+    </div>
+  </div>
+  <div class="row align-middle center-flex">
+    <div class="large-5 medium-5 small-12 space-bottom-md columns slide-up">
+      <button class="image-container b-black" onclick="window.location='scobie.html';">
+        <a class="btn-arrow"></a>
+        <img class="image-hover" src="images/20180218_154056.jpg">
+        <div class="tag-name-label center">
+          <h4 class="t-yellow">Scobie Maddy</h4>
+          <p class="t-gray">Primary pet tenant</p>
+        </div>
+      </button>
+    </div>
+    <div class="large-5 medium-5 small-12 space-bottom-md columns slide-up">
+      <button class="image-container b-black" onclick="window.location='comet.html';">
+        <a class="btn-arrow"></a>
+        <img class="image-hover" src="images/IMG_4560.jpg">
+        <div class="tag-name-label center">
+          <h4 class="t-yellow">Comet Maddy</h4>
+          <p class="t-gray">Primary pet tenant</p>
+        </div>
+      </button>
+    </div>
+  </div>
+</div>
+
+    <!-- Footer -->
+
+    <footer class="center">
+      <p class="t-gray pad-bottom-sm">Created by Hannah Maddy</p>
+    </footer>
+
+    <!-- End Footer -->
+
+
+
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="foundation/js/foundation/foundation.js"></script>
+    <script src="foundation/js/foundation/foundation.equalizer.js"></script>
+    <script src="foundation/js/foundation/foundation.topbar.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script type="text/javascript">
+    var $buoop = {vs:{i:9,f:15,o:12.1,s:5.1}};
+    $buoop.ol = window.onload;
+    window.onload=function(){
+      console.log($buoop);
+      try {if ($buoop.ol) $buoop.ol();}catch (e) {}
+      var e = document.createElement("script");
+      e.setAttribute("type", "text/javascript");
+      e.setAttribute("src", "//browser-update.org/update.js");
+      document.body.appendChild(e);
+    }
+
+    var $slide_up = $('.slide-up');
+    var $window = $(window);
+
+    function check_if_in_view() {
+      var window_height = $window.height();
+      var window_top_position = $window.scrollTop();
+      var window_bottom_position = (window_top_position + window_height);
+
+      $.each($slide_up, function() {
+        var $element = $(this);
+        var element_height = $element.outerHeight();
+        var element_top_position = $element.offset().top;
+        var element_bottom_position = (element_top_position + element_height);
+
+        //check to see if this current container is within viewport
+        if ((element_bottom_position >= window_top_position) &&
+            (element_top_position <= window_bottom_position)) {
+          $element.addClass('in-view');
+        } else {
+          $element.removeClass('in-view');
+        }
+      });
+    }
+
+    $window.on('scroll resize', check_if_in_view);
+    $window.trigger('scroll');
+
+    </script>
+
+
+
+  </body>
+</html>

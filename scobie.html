@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>The Maddy Household</title>
+
+    <link rel="stylesheet" href="foundation/css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
+    <script src="node_modules/@bower_components/webcomponentsjs/webcomponents-loader.js" ></script>
+
+  </head>
+  <body>
+    <!-- Nav -->
+    <nav>
+      <div class="row align-middle vertical">
+        <a class="columns" href="index.html">
+          <h4 class="no-margin">The maddy's</h4>
+        </a>
+        <a class="btn-square right columns" href="mailto:hannah@radish-life.com"></a>
+      </div>
+    </nav>
+    <!-- End Nav -->
+
+    <!-- Code that all your templates share, like a header -->
+    <div class="bg-image" style="background-image:url('images/20180218_154056.jpg'); background-position: center top;">
+</div>
+
+<div class="space-vertical">
+  <div class="row block">
+    <h2 class="columns">Scobie Maddy</h2>
+    <p class="t-gray pad-bottom-sm columns">Primary pet tenant</p>
+    <div class="large-8 medium-8 small-12 block columns slide-up">
+      <hr>
+      <div class="pad-vertical-md">
+        <p>Scobie is a 7.5 year old neutered Jack Russel Terrier/Pug mix. Hannah adopted  Scobie over 3 years ago and he has been living in apartment rentals up to the point when Hannah purchased her home in 2016.
+        </p>
+        <br>
+        <p>Scobie is 15 lbs and up-to-date with all of his shots. He is very social and playful and loves befriending other dogs, children and adults. Scobie is 100% potty trained and enjoys getting his energy out with a walk, a trip to the dog park or a good game of fetch.
+        </p>
+        <br>
+        <p>Scobie has a huge selection of toys values and enjoys playing with them on his own - he even throws his own ball for fetch!
+        </p>
+      </div>
+      <hr>
+    </div>
+  </div>
+</div>
+<div class="space-bottom">
+  <div class="row align-middle">
+    <div class="large-3 medium-3 small-12 columns slide-up space-bottom-md">
+      <div class="image-container">
+        <img src="images/20180218_154056.jpg">
+      </div>
+    </div>
+    <div class="large-3 medium-3 small-12 columns slide-up space-bottom-md">
+      <div class="image-container">
+        <img src="images/IMG_0561.jpg">
+      </div>
+    </div>
+    <div class="large-3 medium-3 small-12 columns slide-up space-bottom-md">
+      <div class="image-container">
+        <img src="images/2018-02-21 14.42.04.jpg">
+      </div>
+    </div>
+    <div class="large-3 medium-3 small-12 columns slide-up space-bottom-md">
+      <div class="image-container">
+        <img src="images/IMG_9185.jpg">
+      </div>
+    </div>
+  </div>
+  <div class="row align-middle">
+    <div class="large-3 medium-3 small-12 columns slide-up space-bottom-md">
+      <div class="image-container">
+        <img src="images/IMG_9574.jpg">
+      </div>
+    </div>
+    <div class="large-3 medium-3 small-12 columns slide-up space-bottom-md">
+      <div class="image-container">
+        <img src="images/IMAG5123.jpg">
+      </div>
+    </div>
+    <div class="large-3 medium-3 small-12 columns slide-up space-bottom-md">
+      <div class="image-container">
+        <img src="images/IMG_9750.jpg">
+      </div>
+    </div>
+    <div class="large-3 medium-3 small-12 columns slide-up space-bottom-md">
+      <div class="image-container">
+        <img src="images/scobie-alone.jpg">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <!-- Footer -->
+
+    <footer class="center">
+      <p class="t-gray pad-bottom-sm">Created by Hannah Maddy</p>
+    </footer>
+
+    <!-- End Footer -->
+
+
+
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="foundation/js/foundation/foundation.js"></script>
+    <script src="foundation/js/foundation/foundation.equalizer.js"></script>
+    <script src="foundation/js/foundation/foundation.topbar.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <script type="text/javascript">
+    var $buoop = {vs:{i:9,f:15,o:12.1,s:5.1}};
+    $buoop.ol = window.onload;
+    window.onload=function(){
+      console.log($buoop);
+      try {if ($buoop.ol) $buoop.ol();}catch (e) {}
+      var e = document.createElement("script");
+      e.setAttribute("type", "text/javascript");
+      e.setAttribute("src", "//browser-update.org/update.js");
+      document.body.appendChild(e);
+    }
+
+    var $slide_up = $('.slide-up');
+    var $window = $(window);
+
+    function check_if_in_view() {
+      var window_height = $window.height();
+      var window_top_position = $window.scrollTop();
+      var window_bottom_position = (window_top_position + window_height);
+
+      $.each($slide_up, function() {
+        var $element = $(this);
+        var element_height = $element.outerHeight();
+        var element_top_position = $element.offset().top;
+        var element_bottom_position = (element_top_position + element_height);
+
+        //check to see if this current container is within viewport
+        if ((element_bottom_position >= window_top_position) &&
+            (element_top_position <= window_bottom_position)) {
+          $element.addClass('in-view');
+        } else {
+          $element.removeClass('in-view');
+        }
+      });
+    }
+
+    $window.on('scroll resize', check_if_in_view);
+    $window.trigger('scroll');
+
+    </script>
+
+
+
+  </body>
+</html>
